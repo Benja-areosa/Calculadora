@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+body{ 
+    min-height: 100vh;
+    background-color: #4d4949ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, sans-serif;
+}
+
+.calculadora {
+    max-width: 21.25rem;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    background-color: #222;
+    box-shadow: 0 .625rem 1.5625rem rgba(0,0,0,0.3);
+}
+
+.display {
+    overflow: hidden;
+    font-size: 2.5rem;
+    text-align: right;
+    background-color: #111;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .625rem;
+}
+
+.teclas button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.teclas button:hover {
+    background-color: #444;
+}
+
+.teclas button:active {
+    transform: scale(0.95);
+}
